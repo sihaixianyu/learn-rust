@@ -12,11 +12,26 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7469e3a-94e9-44c6-bc91-fbcdbe0d5bc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/learn-rust.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+    <list default="true" id="1abe969e-199f-47bb-b31b-c9d57ec7cb8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/attribute/cfg_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/attribute/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/vec_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/error/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/error/panic_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/error/recover_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functional/closure_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functional/iterator_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functional/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic/func_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic/lifetime_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pointer/box_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pointer/deref_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pointer/drop_demo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pointer/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +40,13 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,10 +60,10 @@
     </file-type-list>
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="w16alpu3" />
+    <option name="directoryName" value="9lkxmgas" />
   </component>
-  <component name="ProjectId" id="1zPGHBaYxCHpukEl4CpIlmk53Hk" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1zToTuTZAu41BXemFfIGyCV7xlN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -56,15 +78,52 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/sihaixianyu/Projects/RustProjects/learn-rust/src/attribute/cfg.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/sihaixianyu/Projects/RustProjects/learn-rust/src/generic/func_demo.rs" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager">
-    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package learn-rust --bin learn-rust" />
+  <component name="RunManager" selected="Cargo.Test pointer::tests::test_drop_demo">
+    <configuration name="Test pointer::tests::test_demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package learn-rust --lib pointer::tests::test_demo -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test pointer::tests::test_deref_demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package learn-rust --lib pointer::tests::test_deref_demo -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test pointer::tests::test_drop_demo" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package learn-rust --lib pointer::tests::test_drop_demo -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -84,19 +143,55 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Test pointer::tests::test_drop_demo" />
+        <item itemvalue="Cargo.Test pointer::tests::test_deref_demo" />
+        <item itemvalue="Cargo.Test pointer::tests::test_demo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7469e3a-94e9-44c6-bc91-fbcdbe0d5bc0" name="Changes" comment="" />
-      <created>1634042219239</created>
+      <changelist id="1abe969e-199f-47bb-b31b-c9d57ec7cb8e" name="Changes" comment="" />
+      <created>1634181451300</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1634042219239</updated>
-      <workItem from="1634042221474" duration="1490000" />
+      <updated>1634181451300</updated>
+      <workItem from="1634181455338" duration="123000" />
+      <workItem from="1634181595520" duration="3000" />
+      <workItem from="1634181786151" duration="11000" />
+      <workItem from="1634181812484" duration="252000" />
+      <workItem from="1634186412893" duration="1338000" />
+      <workItem from="1634301245792" duration="104000" />
+      <workItem from="1634301364672" duration="164000" />
+      <workItem from="1634373675392" duration="31000" />
+      <workItem from="1634392123352" duration="1058000" />
+      <workItem from="1634393525771" duration="65000" />
+      <workItem from="1634439006849" duration="2284000" />
+      <workItem from="1634545800355" duration="3756000" />
+      <workItem from="1635075264463" duration="2451000" />
+      <workItem from="1635174576396" duration="155000" />
+      <workItem from="1635174767907" duration="544000" />
+      <workItem from="1635248481494" duration="88000" />
+      <workItem from="1635772201378" duration="3183000" />
+      <workItem from="1635908238571" duration="1784000" />
+      <workItem from="1635940787111" duration="640000" />
+      <workItem from="1635941602897" duration="13000" />
+      <workItem from="1635942880086" duration="1471000" />
+      <workItem from="1635991365437" duration="38000" />
+      <workItem from="1635991681881" duration="1000" />
+      <workItem from="1635992026352" duration="217000" />
+      <workItem from="1635992265851" duration="52000" />
+      <workItem from="1635992337762" duration="3412000" />
+      <workItem from="1636534227334" duration="2446000" />
+      <workItem from="1636543291395" duration="2485000" />
+      <workItem from="1636596981528" duration="1658000" />
     </task>
     <servers />
   </component>
@@ -113,6 +208,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -121,11 +217,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/main.rs</url>
-          <line>9</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/functional/mod.rs</url>
+          <line>68</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
