@@ -52,16 +52,23 @@ mod tests {
 
     #[test]
     fn test_case1() {
-        let post = Post{title: "Rust语言简介".to_string(),author: "Sunface".to_string(), content: "Rust棒极了!".to_string()};
-        let weibo = Weibo{username: "Sunface".to_string(),content: "好像微博没Tweet好用".to_string()};
-    
-        println!("{}",post.summarize());
-        println!("{}",weibo.summarize());
+        let post = Post {
+            title: "Rust语言简介".to_string(),
+            author: "Sunface".to_string(),
+            content: "Rust棒极了!".to_string(),
+        };
+        let weibo = Weibo {
+            username: "Sunface".to_string(),
+            content: "好像微博没Tweet好用".to_string(),
+        };
+
+        println!("{}", post.summarize());
+        println!("{}", weibo.summarize());
     }
 
     #[test]
-    fn test_case2() {    
-        println!("{}",dyn_summary_demo(0).summarize());
-        println!("{}",dyn_summary_demo(1).summarize());
+    fn test_case2() {
+        println!("{}", dyn_summary_demo(0).summarize());
+        println!("{}", dyn_summary_demo(1).summarize());
     }
 }
