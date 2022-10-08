@@ -1,10 +1,11 @@
-pub mod asynchronous;
+pub mod asyncs;
 pub mod closure;
 pub mod collection;
 pub mod io;
 pub mod keyword;
 pub mod lifetime;
 pub mod net;
+pub mod pointer;
 
 #[cfg(test)]
 mod tests {
