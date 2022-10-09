@@ -28,6 +28,13 @@ pub struct Gadget {
     pub owner: Rc<Owner>,
 }
 
+#[derive(Debug)]
+pub struct Node {
+    pub value: i32,
+    pub parent: RefCell<Weak<Node>>,
+    pub children: RefCell<Vec<Rc<Node>>>,
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -125,5 +132,49 @@ mod tests {
         // 首先 gadget2 和 gadget1 被销毁。
         // 然后因为 gadget_owner 的引用数量为 0，所以这个对象可以被销毁了。
         // 循环引用问题也就避免了
+    }
+
+    #[test]
+    fn test_case4() {
+        let leaf = Rc::new(Node {
+            value: 3,
+            parent: RefCell::new(Weak::new()),
+            children: RefCell::new(vec![]),
+        });
+
+        println!(
+            "leaf strong = {}, weak = {}",
+            Rc::strong_count(&leaf),
+            Rc::weak_count(&leaf),
+        );
+
+        {
+            let branch = Rc::new(Node {
+                value: 5,
+                parent: RefCell::new(Weak::new()),
+                children: RefCell::new(vec![Rc::clone(&leaf)]),
+            });
+
+            *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
+
+            println!(
+                "branch strong = {}, weak = {}",
+                Rc::strong_count(&branch),
+                Rc::weak_count(&branch),
+            );
+
+            println!(
+                "leaf strong = {}, weak = {}",
+                Rc::strong_count(&leaf),
+                Rc::weak_count(&leaf),
+            );
+        }
+
+        println!("leaf parent = {:?}", leaf.parent.borrow().upgrade());
+        println!(
+            "leaf strong = {}, weak = {}",
+            Rc::strong_count(&leaf),
+            Rc::weak_count(&leaf),
+        );
     }
 }
