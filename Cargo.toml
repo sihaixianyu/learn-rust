@@ -1,2 +1,2 @@
 [workspace]
-members = ["basic", "poem", "tokio", "sea-orm"]
+members = ["basic", "tokio", "sea-orm", "chrono", "axum"]

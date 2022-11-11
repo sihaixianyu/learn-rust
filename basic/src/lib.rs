@@ -1,11 +1,11 @@
-pub mod asyncs;
-pub mod closure;
-pub mod collection;
+pub mod asynchronous;
+pub mod concurrent;
+pub mod crontrol;
+pub mod enums;
 pub mod io;
-pub mod keyword;
 pub mod lifetime;
 pub mod net;
-pub mod pointer;
+pub mod ownership;
 
 #[cfg(test)]
 mod tests {
