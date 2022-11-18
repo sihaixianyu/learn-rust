@@ -1,3 +1,5 @@
+pub mod time_fmt;
+
 #[cfg(test)]
 mod tests {
     use chrono::{Local, NaiveTime};
